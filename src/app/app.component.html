@@ -1,0 +1,16 @@
+<!-- <app-table></app-table> -->
+<!--pp-stop-timer></app-stop-timer> -->
+<h2>Timely</h2>
+
+
+<div *ngIf = "!click">
+  <button id = "start-btn" mat-raised-button (click) = "startClicked()">Start</button>
+</div>
+
+
+<div *ngIf = "click">
+  <button id = "stop-btn" mat-raised-button (click) = "stopClicked()">Stop</button>
+  <app-table [parentData] = "currentRow"></app-table>
+</div>
+
+
